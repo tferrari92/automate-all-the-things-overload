@@ -17,7 +17,7 @@
     <a  href="/docs/readme_es.md">Versión en Español</a>
 </p> -->
 
-<p title="All The Things" align="center"> <img src="https://i.imgur.com/yaTUbgG.jpg"></p>
+<p title="All The Things" align="center"> <img src="https://i.imgur.com/fpJT9Ib.jpg"></p>
 
 
 # **NIRVANA EDITION**
