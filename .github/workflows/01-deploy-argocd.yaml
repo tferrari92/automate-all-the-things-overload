@@ -35,7 +35,7 @@ jobs:
           # Then we create an application that will monitor the helm/infra/argocd directory, the same we used to deploy ArgoCD, making ArgoCD self-managed. Any changes we apply in the helm/infra/argocd directory will be automatically applied.
           kubectl create -n argocd -f argo-cd/self-manage/argocd-application.yaml  
 
-          # Finally, we create an application that will automatically deploy any ArgoCD Applications we specify in the argo-cd/applications directory.
+          # Finally, we create an application that will automatically deploy any ArgoCD Applications we specify in the argo-cd/applications directory (App of Apps pattern).
           kubectl create -n argocd -f argo-cd/self-manage/argocd-app-of-apps-application.yaml  
 
           # Quick access to ArgoCD UI.
