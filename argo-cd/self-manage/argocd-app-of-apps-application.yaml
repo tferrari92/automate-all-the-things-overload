@@ -1,18 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd-appprojects
+  name: argocd-app-of-apps
   namespace: argocd
   annotations:
-    argocd.argoproj.io/sync-wave: "-12"
-spec:  
+    argocd.argoproj.io/sync-wave: "-10"
+spec:    
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc
   project: argocd
   source:
     repoURL: https://github.com/AATT_GITHUB_USERNAME/automate-all-the-things-braindamage.git # This value was modified by the initial-setup python script
-    path: argo-cd/self-manage/appprojects
+    path: argo-cd/applications
     directory:
       recurse: true
       jsonnet: {}
