@@ -210,7 +210,7 @@ git commit -m "customized repo"
 git push
 ```
 
-5. Awesome! You can now proceed with the Azure DevOps setup.
+5. Awesome! You can now proceed with the GitHub Actions setup.
 
 <br/>
 <br/>
