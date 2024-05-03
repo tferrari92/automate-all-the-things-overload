@@ -393,7 +393,7 @@ Finally the pipeline will get the ArgoCD web UI URL and admin account password a
 ## Instructions
 
 1. On your GitHub repo, go to the "Actions" tab.
-2. Click on the "03-Deploy ArgoCD" workflow.
+2. Click on the "01-Deploy ArgoCD" workflow.
 3. Click on "Run workflow" (Use workflow from Branch: main).
 4. When it's finished, the frontend endpoints and ArgoCD access files will be exported as artifacts. You'll find them in the workflow run screen under "Artifacts". Download them to see the ArgoCD URL and credentials, and the frontend endpoints.
 5. You can now access the ArgoCD UI, if it's not ready just hit refresh every few seconds.
@@ -419,15 +419,14 @@ You could easily encrypt the secrets yourselves using the kubeseal CLI tool, but
 
 ## Instructions
 
-1. Go to "Pipelines" under "Pipelines" on the left side menu.
-2. Click on "New pipeline".
-3. Select "GitHub".
-4. Select the repo, it should be "your-github-username/automate-all-the-things-overload"
-5. Select "Existing Azure Pipelines YAML file".
-6. Under "Branch" select "main" and under "Path" select "/azure-devops/02-sealed-secret-generator.yml". Click "Continue".
-7. If you DON'T have a hosted parallelism, you'll need to do the same thing as in point 10 from the [infrastructure deployment pipeline](#instructions).
-8. Click on "Run". It will fail the first time because you haven't passed in the the values, just run it again.
-
+1. On your GitHub repo, go to the "Actions" tab.
+2. Click on the "01-Deploy ArgoCD" workflow.
+3. Click on "Run workflow".
+4. Complete the empty fields. Passwords are:
+- automate-all-the-things-dev
+- automate-all-the-things-stage
+- automate-all-the-things-prod
+5. Click on "Run workflow".
 
 <br/>
 <br/>
