@@ -466,14 +466,9 @@ Now, if the infrastrucure team needs to make changes to the cluster resources, t
 
 ## Instructions
 
-1. Go to "Pipelines" under "Pipelines" on the left side menu.
-2. Click on "New pipeline".
-3. Select "GitHub".
-4. Select the repo, it should be "your-github-username/automate-all-the-things-overload"
-5. Select "Existing Azure Pipelines YAML file".
-6. Under "Branch" select "main" and under "Path" select "/azure-devops/03-build-and-deploy-backend.yml". Click "Continue".
-7. If you DON'T have a hosted parallelism, you'll need to do the same thing as in point 10 from the [infrastructure deployment pipeline](#instructions).
-8. Click on "Run".
+1. On your GitHub repo, go to the "Actions" tab.
+2. Click on the "03-Build & deploy my-app-backend image" workflow.
+3. Click on "Run workflow" (Use workflow from Branch: main).
 
 <br/>
 <br/>
@@ -504,15 +499,9 @@ For the infrastructure, same as before. If the infrastrucure team needs to, for 
 
 ## Instructions
 
-1. Go to "Pipelines" under "Pipelines" on the left side menu.
-2. Click on "New pipeline".
-3. Select "GitHub".
-4. Select the repo, it should be "your-github-username/automate-all-the-things-overload"
-5. Select "Existing Azure Pipelines YAML file".
-6. Under "Branch" select "main" and under "Path" select "/azure-devops/04-build-and-deploy-frontend.yml". Click "Continue".
-7. If you DON'T have a hosted parallelism, you'll need to do the same thing as in point 10 from the [infrastructure deployment pipeline](#instructions).
-8. Click on "Run".
-
+1. On your GitHub repo, go to the "Actions" tab.
+2. Click on the "04-Build & deploy my-app-frontend image" workflow.
+3. Click on "Run workflow" (Use workflow from Branch: main).
 <!-- 9. When it's done, you should be able to access the URLs you got from the ArgoCD Deployment pipeline. But if you go to the URLs too quickly you'll see nothing there. We need to give ArgoCD a little time to notice the changes in the [/helm/my-app/frontend directory](helm/my-app/frontend). By default ArgoCD pulls for changes every three minutes. You can either wait like an adult or go into the ArgoCD web UI and hit "Refresh Apps" like the impatient child that you are.
 11. Check the URLs again.
 12. On the top left of the website you'll see the "Visit count". This number is being stored in the ElatiCache DB and accessed through the backend.
@@ -594,15 +583,10 @@ The pipeline will finish with a warning, worry not, this is because the "terrafo
 
 ## Instructions
 
-1. Go to "Pipelines" under "Pipelines" on the left side menu.
-2. Click on "New pipeline".
-3. Select "GitHub".
-4. Select the repo, it should be "your-github-username/automate-all-the-things-overload"
-5. Select "Existing Azure Pipelines YAML file".
-6. Under "Branch" select "main" and under "Path" select "/azure-devops/05-destroy-all-the-things.yml". Click "Continue".
-7. If you DON'T have a hosted parallelism, you'll need to do the same thing as in point 10 from the [infrastructure deployment pipeline](#instructions).
-8. Click on "Run".
-9. There's two AWS resources that for some reason don't get destroyed: a DHCP Option Set and an Auto Scaling Managed Rule. I'm pretty sure these don't generate any expenses but you can go and delete them manually just in case. I'm really sorry about this... I have brought [shame](https://i.imgur.com/PIm1apF.gifv) upon my family...
+1. On your GitHub repo, go to the "Actions" tab.
+2. Click on the "05-Destroy infrastructure" workflow.
+3. Click on "Run workflow" (Use workflow from Branch: main).
+4. There's two AWS resources that for some reason don't get destroyed: a DHCP Option Set and an Auto Scaling Managed Rule. I'm pretty sure these don't generate any expenses but you can go and delete them manually just in case. I'm really sorry about this... I have brought [shame](https://i.imgur.com/PIm1apF.gifv) upon my family...
 
 <br/>
 <br/>
