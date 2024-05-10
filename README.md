@@ -35,13 +35,14 @@ This Overload Edition builds upon the [Insane Edition](https://github.com/tferra
 
 ### Versions in order of complexity:
 
+### Versions in order of complexity:
 1. [Regular Edition](https://github.com/tferrari92/automate-all-the-things)
 2. [Hardcore Edition](https://github.com/tferrari92/automate-all-the-things-hardcore)
 3. [Insane Edition](https://github.com/tferrari92/automate-all-the-things-insane)
 4. [Overload Edition](https://github.com/tferrari92/automate-all-the-things-overload)
-6. [Transcendence Edition](https://github.com/tferrari92/automate-all-the-things-transcendence)
 7. [Nirvana Edition](https://github.com/tferrari92/automate-all-the-things-nirvana)
 <!-- 5. [Braindamage Edition](https://github.com/tferrari92/automate-all-the-things-braindamage) -->
+<!-- 6. [Transcendence Edition](https://github.com/tferrari92/automate-all-the-things-transcendence)  -->
 
 ### Spin-offs:
 - [Backstage Minikube Lab](https://github.com/tferrari92/backstage-minikube-lab)
@@ -626,7 +627,7 @@ Special thanks to all these wonderful YouTube people. This wouldn't have been po
 
 ## On the next edition
 
-[Automate All The Things Transcendence Edition](https://github.com/tferrari92/automate-all-the-things-transcendence):
+[Automate All The Things Nirvana Edition](https://github.com/tferrari92/automate-all-the-things-nirvana):
 
 - We'll start using Horizontal Pod Autoscalers.
 - We'll automate TLS certificates provisioning with Kubernetes Cert Manager.
