@@ -33,12 +33,13 @@ This Overload Edition builds upon the [Insane Edition](https://github.com/tferra
 - Removed the use of Canary deployments in Dev environment
 
 ### Versions in order of complexity:
+
 1. [Regular Edition](https://github.com/tferrari92/automate-all-the-things)
 2. [Hardcore Edition](https://github.com/tferrari92/automate-all-the-things-hardcore)
 3. [Insane Edition](https://github.com/tferrari92/automate-all-the-things-insane)
 4. [Overload Edition](https://github.com/tferrari92/automate-all-the-things-overload)
+5. [Braindamage Edition](https://github.com/tferrari92/automate-all-the-things-braindamage)
 7. [Nirvana Edition](https://github.com/tferrari92/automate-all-the-things-nirvana)
-<!-- 5. [Braindamage Edition](https://github.com/tferrari92/automate-all-the-things-braindamage) -->
 <!-- 6. [Transcendence Edition](https://github.com/tferrari92/automate-all-the-things-transcendence)  -->
 
 ### Spin-offs:
@@ -624,9 +625,6 @@ Special thanks to all these wonderful YouTube people. This wouldn't have been po
 
 ## On the next edition
 
-[Automate All The Things Nirvana Edition](https://github.com/tferrari92/automate-all-the-things-nirvana):
+[Automate All The Things Braindamage Edition](https://github.com/tferrari92/automate-all-the-things-braindamage):
 
-- We'll start using Horizontal Pod Autoscalers.
-- We'll automate TLS certificates provisioning with Kubernetes Cert Manager.
-- We'll automate DNS records provisioning with Kubernetes External DNS.
-- We'll ditch DockerHub and start using our self-hosted image registry with Harbor.
+- We'll deploy a Developer Portal with Backstage
