@@ -29,7 +29,7 @@ This Overload Edition builds upon the [Insane Edition](https://github.com/tferra
 - ArgoCD Sync Waves
 - Sealed Secrets
 - Backend code instrumented with OpenTelemetry
-- Traces collection and visualization Jaeger
+- Traces collection and visualization with Jaeger
 - Removed the use of Canary deployments in Dev environment
 
 ### Versions in order of complexity:
